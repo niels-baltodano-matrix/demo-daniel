@@ -1,0 +1,11 @@
+# docker-compose.yml
+# spring boot application
+version: '3'
+services:
+  spring-boot-app:
+    image: spring-boot-app
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
